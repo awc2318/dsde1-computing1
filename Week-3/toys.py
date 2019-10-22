@@ -9,36 +9,43 @@ with functions.
 # write a function that adds 1
 # to the input and prints the result
 def inc(a):
+    a = a+1
     print(a)
-
+inc(5)
 
 # write a function that adds 1
 # to the input and returns the result
 def inc_return(a):
-    return # hint this is incomplete
-
+    return a+1
+print(inc_return(2))
 
 # write a function that adds
 # the two input numbers together
 # and returns the sum
 def sum(a, b):
-    return
-
+    sum = a + b
+    return sum
+print(sum(7, 2))
 
 # write a function that takes two
 # numbers, adds them together using 
 # sum() and then increments the sum
 # using inc_return
 def sum_inc(a, b):
-    return
+    sum_inc = sum(a, b)
+    return sum_inc
+
+print(sum_inc(8, 4))
 
 
 # write a function that returns a 
 # boolean (True or False) for whether 
 # the input number is even
 def is_even(a):
-    return
+    is_even = a % 2 == 0
+    return print(is_even)
 
+is_even(6)
 
 # create for loop that takes a string
 # and an integer and returns a new string 
@@ -47,7 +54,10 @@ def is_even(a):
 # e.g. string_repeat('ho', 3) returns
 # 'hohoho'
 def string_repeat(phrase, repeat):
-    # hint: you can add strings together 
-    # in order to concatenate them
+   num = int(repeat)
+   for sentences in range(num)
     return
 
+ # hint: you can add strings together 
+    # in order to concatenate them
+    

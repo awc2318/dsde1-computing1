@@ -17,6 +17,14 @@ print('So what you doing here?')
 Talk = input(' ')
 print(Talk + ' really? You Sure?')
 
-Print('Say a number between 1 - 10')
+print('Say a number between 1 - 10')
 guess = input('')
 guess = int(guess)
+import random
+secret_num = random.randint(1,10)
+for wd in range(1, 7):
+    if guess == secret_num:
+        print('World domination complete')
+    else: 
+        print('Nope')
+        break
