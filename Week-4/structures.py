@@ -5,11 +5,17 @@ Simple functions performing operations on basic Python data structures.
 '''
 
 # Lists
-
 # write a function that returns a list containig the first and the last element
 # of "the_list". 
-def first_and_last(the_list):
-    return []
+
+the_list = ['1','2', '4', '6', '7', '8']
+
+def first_and_last(the_list):   
+    function1 = list(str(the_list[0]) + str(the_list[3]))
+    return function1
+print(first_and_last(the_list))
+
+
 
 
 # write a function that returns part of "the_list" between indices given by the
@@ -18,16 +24,23 @@ def first_and_last(the_list):
 # If "end" is greater then "beginning" or any og the indices is out of the
 # list, raise a "ValueError" exception. 
 def part_reverse(the_list, beginning, end):
-    return # hint this is incomplete
-
+    the_list.reverse()
+    if end > beginning:
+        raise ValueError
+    mylist = the_list[-beginning:-end]
+    return mylist
 
 # write a function that at the "index" of "the_list" inserts three times the
 # same value. For example if the_list = [0,1,2,3,4] and index = 3 the function
 # will return [0,1,2,3,3,3,4]. 
+
 def repeat_at_index(the_list, index):
-    return
+    a = index + 1
+    multipleNum = the_list[index]
+    print(multipleNum)
+    return the_list.insert(a, the_list[index])
 
-
+# print(repeat_at_index(the_list, 3))
 # Strings
 
 # write a function that checks whether the word is a palindrome, i.e. it reads
